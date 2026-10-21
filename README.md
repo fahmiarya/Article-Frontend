@@ -15,8 +15,7 @@ A **Vue 3** (Vite) frontend for the Sharing Vision project.
 
 ```bash
 # 1️⃣ Clone the repository (replace <repository-url> with the actual URL) if you haven't yet
-git clone <repository-url> sharing-vision
-cd sharing-vision/Frontend
+git clone https://github.com/fahmiarya/Article-Frontend.git
 ```
 
 ### Install dependencies
