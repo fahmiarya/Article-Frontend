@@ -70,6 +70,13 @@ async function submit(status: 'publish' | 'draft') {
     loading.value = false;
   }
 }
+
+function onSubmit(event: Event) {
+  
+  event.preventDefault();
+ 
+  submit('publish');
+}
 </script>
 
 <style scoped></style>
