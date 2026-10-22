@@ -14,8 +14,8 @@ A **Vue 3** (Vite) frontend for the Sharing Vision project.
 ## 🚀 Quick start (frontend only)
 
 ```bash
-# 1️⃣ Clone the repository (replace <repository-url> with the actual URL) if you haven't yet
 git clone https://github.com/fahmiarya/Article-Frontend.git
+cd Article-Frontend
 ```
 
 ### Install dependencies
@@ -27,11 +27,11 @@ npm install
 ### Environment configuration
 
 ```bash
-# Copy the example env file – it sets the API base URL for the dev server.
-cp .env.example .env   # .env will contain VITE_API_BASE_URL=http://localhost:8080
+# Salin file env contoh – file ini mengatur base URL API untuk development server.
+cp .env.example .env   # .env akan berisi VITE_API_BASE_URL=http://localhost:8080
 ```
 
-> **Note:** The backend API should be running at `http://localhost:8080` (Docker Compose in the Backend folder). Adjust the URL in `.env` if you use a different host or port.
+> **Note:** Backend API harus berjalan di http://localhost:8080 (Docker Compose di folder Backend). Sesuaikan URL di .env jika menggunakan host atau port yang berbeda.
 
 ### Run the dev server
 
@@ -39,20 +39,4 @@ cp .env.example .env   # .env will contain VITE_API_BASE_URL=http://localhost:80
 npm run dev
 ```
 
-The server will try to start on port **3000**; if it is already in use, Vite will automatically switch to the next free port (e.g., `http://localhost:3001`). Open the printed URL in your browser.
-
----
-
-## 🛠️ Development notes
-
-- The default view is the **Published** tab and shows only posts with `status: "publish"` on first load.
-- The **Trash** tab no longer shows a "Trash" button for posts that are already in the trash.
-- Vite alias `@` points to the `src` directory (configured in `vite.config.ts`).
-
----
-
-## 📄 Environment file
-
-- `Frontend/.env.example` – contains `VITE_API_BASE_URL`. Copy it to `.env` before starting the dev server.
-
----
+Server akan mencoba berjalan di port 3000; jika port tersebut sudah digunakan, Vite akan otomatis beralih ke port kosong berikutnya (misalnya, http://localhost:3001). Buka URL yang ditampilkan di terminal.
